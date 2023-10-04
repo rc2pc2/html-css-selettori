@@ -1,0 +1,87 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    margin-right: 3rem;
+    border: 1rem solid magenta;
+    background-color: cyan;
+    margin-bottom: 120px;
+}
+
+.box:hover{
+    background-color: lime;
+}
+
+.box-different{
+    margin-top: 100px;
+}
+
+/* ? Seleziono tutti gli elementi span che hanno classe "tag" e classe "seconda-classe"  */
+span.tag.seconda-classe{
+    color: blue;
+}
+
+/* ? Seleziono tutti gli a figli di un li, figlio di ul */
+ul li a{
+    color: white;
+}
+
+/* # Seleziono tutti gli elementi a che hanno come href il valore # */
+a[href='#']{
+    color: yellow;
+}
+
+/* # Seleziono tutti gli elementi span che sono discendenti di un elemento div e hanno come classe "ciao" # */
+div span.ciao{
+    font-size: 4rem;
+}
+
+span,
+a,
+h1{
+    color : red;
+}
+
+/* ? Seleziono tutti gli elementi span figli DIRETTI di un elemento div */
+div>span{
+    color: green;
+}
+
+article{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+article > *{
+    margin-bottom: 1rem;
+}
+
+section.content > article {
+    /* background-color: aqua; */
+    font-size: 1.1rem;
+}
+
+article div.image img{
+    height: 200px;
+}
+
+
+main h2:first-child{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.content article:nth-child(2) p span{
+    background-color: red;
+}
+
